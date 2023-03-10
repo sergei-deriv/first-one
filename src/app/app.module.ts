@@ -6,6 +6,7 @@ import { Manual } from './manual/manual.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertsComponent } from './warning-alerts/warning-alerts.component';
+import { SuccessAlertsComponent } from './success-alerts/success-alerts.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { WarningAlertsComponent } from './warning-alerts/warning-alerts.componen
     ServersComponent,
     WarningAlertsComponent,
     Manual,
+    SuccessAlertsComponent,
   ],
   imports: [BrowserModule],
   providers: [],
