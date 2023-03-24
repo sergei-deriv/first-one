@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./test-component.component.css'],
 })
 export class TestComponentComponent {
-  username: '';
+  username = '';
+  show = true;
+  count = 0;
+  actions = [];
 
   resetUsername() {
     this.username = '';
+  }
+
+  toggle() {
+    this.show = !this.show;
+    this.count++;
+    this.actions.push('button click #' + this.count);
   }
 }

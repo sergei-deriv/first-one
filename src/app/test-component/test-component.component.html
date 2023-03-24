@@ -1,10 +1,11 @@
 <p>test-component works!</p>
-<input [(ngModel)]="username" />
-<p>username: {{ username }}</p>
-<button
-  [disabled]="!username"
-  class="btn btn-primary"
-  (click)="resetUsername()"
+<button class="btn btn-primary" (click)="toggle()">Display Details</button>
+<p *ngIf="show">Any content</p>
+<p>count of toggle: {{ count }}</p>
+<p
+  *ngFor="let action of actions; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : null }"
+  [ngClass]="{ 'white-color': i >= 4 }"
 >
-  just button
-</button>
+  {{ action }}
+</p>
