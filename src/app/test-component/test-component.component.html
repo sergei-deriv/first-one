@@ -1,0 +1,10 @@
+<p>test-component works!</p>
+<input [(ngModel)]="username" />
+<p>username: {{ username }}</p>
+<button
+  [disabled]="!username"
+  class="btn btn-primary"
+  (click)="resetUsername()"
+>
+  just button
+</button>
